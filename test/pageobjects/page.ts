@@ -10,4 +10,11 @@ export default class Page {
     public open (path: string) {
         return browser.url(`https://the-internet.herokuapp.com/${path}`)
     }
+     /**
+    * Opens a sub page of the page
+    * @param path path of the sub page (e.g. /path/to/page.html)
+    */
+    public open2 (path: string) {
+        return browser.url(`https://www.tutorialspoint.com/html/${path}.htm`)
+    }
 }
